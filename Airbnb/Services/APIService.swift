@@ -11,7 +11,7 @@ final class APIService{
     init() { }
     
     struct Constants {
-        static let apiUrl = URL(string: "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/airbnb-listings/records?limit=1&lang=en&refine=city%3A%22New+York%22&refine=room_type%3A%22Entire+home%2Fapt%22")
+        static let apiUrl = URL(string: "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/airbnb-listings/records?limit=10&lang=en&refine=city%3A%22New+York%22&refine=room_type%3A%22Entire+home%2Fapt%22")
     }
     
     public func getListings(completion: @escaping (Result<[AirbnbListing], Error>) -> Void) {
